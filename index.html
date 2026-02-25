@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anubhav Bhattacharya | AI/ML Researcher</title>
+    <meta name="description"
+        content="Portfolio of Anubhav Bhattacharya – M.Tech CS student, AI/ML Researcher at IIT Delhi & IIT Guwahati, specializing in LLMs, NLP, and deep learning." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- CANVAS BACKGROUND -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">AB<span class="dot">.</span></div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="hero-content">
+            <div class="hero-badge reveal">AI/ML Researcher</div>
+            <h1 class="hero-name reveal">
+                Anubhav<br /><span class="gradient-text">Bhattacharya</span>
+            </h1>
+            <p class="hero-tagline reveal">
+                <span id="typewriter"></span><span class="cursor-blink">|</span>
+            </p>
+            <p class="hero-summary reveal">
+                M.Tech CS student (SPI: <strong>8.45</strong>) with research experience at
+                <strong>IIT Delhi</strong> &amp; <strong>IIT Guwahati</strong> in multilingual LLM evaluation,
+                GAN-based medical imaging, and agentic NLP pipelines.
+            </p>
+            <div class="hero-buttons reveal">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <div class="hero-socials reveal">
+                <a href="mailto:21cs2025@rgipt.ac.in" aria-label="Email" target="_blank" rel="noopener"><i
+                        class="fas fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/anubhav-bhattacharya-b463ab23a/" aria-label="LinkedIn"
+                    target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AnubhavBhattachayra" aria-label="GitHub" target="_blank" rel="noopener"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.kaggle.com/oatmealnavigator" aria-label="Kaggle" target="_blank" rel="noopener"><i
+                        class="fab fa-kaggle"></i></a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">About <span class="gradient-text">Me</span></h2>
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p>
+                        I am an <strong>M.Tech (IDD) Computer Science student</strong> at Rajiv Gandhi Institute of
+                        Petroleum Technology (RGIPT), an Institution of National Importance along the lines of IITs. My
+                        work sits at the intersection of <strong>Natural Language Processing, Deep Learning,</strong>
+                        and <strong>generative AI</strong>.
+                    </p>
+                    <p>
+                        I've had the privilege of conducting research at two of India's premier institutes — <strong>IIT
+                            Delhi</strong> and <strong>IIT Guwahati</strong> — where I worked on multilingual LLM
+                        benchmarking and GAN-based retinal image reconstruction. I am passionate about building
+                        production-ready AI systems that bridge research and real-world impact.
+                    </p>
+                </div>
+                <div class="about-cards reveal">
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">8.45</span>
+                        <span class="stat-label">SPI Score</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">3</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">1</span>
+                        <span class="stat-label">Paper Published</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number gradient-text">1</span>
+                        <span class="stat-label">SIH National Finalist</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>M.Tech (IDD) in Computer Science &amp; Engineering</h3>
+                                <p class="card-org">Rajiv Gandhi Institute of Petroleum Technology (RGIPT)</p>
+                                <p class="card-sub">An Institution of National Importance along the lines of IITs ·
+                                    Jais, India</p>
+                            </div>
+                            <span class="badge">SPI: 8.45</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot"></div>
+                    <div class="card glass-card">
+                        <div class="card-header">
+                            <div>
+                                <h3>Central Board of Secondary Education</h3>
+                                <p class="card-org">New Delhi, India</p>
+                                <p class="card-sub">12th (2021): 93% &nbsp;|&nbsp; 10th (2019): 96.8%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Work <span class="gradient-text">Experience</span></h2>
+            <div class="experience-list">
+
+                <!-- IIT Guwahati -->
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-flask"></i></div>
+                        <div>
+                            <h3>Research Intern</h3>
+                            <a href="https://www.iitg.ac.in" target="_blank" rel="noopener" class="org-link">Indian
+                                Institute of Technology, Guwahati</a>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Benchmarked <strong>multilingual LLMs</strong> (XLM-R, mBERT, MuRIL, Navarasa, IndicBERT v2)
+                            for <strong>sentiment analysis</strong> across <strong>6 Indian languages</strong> (Hindi,
+                            Bengali, Tamil, Telugu, Urdu, Assamese); established cross-lingual performance baselines for
+                            low-resource NLP.</li>
+                        <li>Applied <strong>prompt tuning</strong> and <strong>few-shot learning</strong> with varied
+                            training data splits (1%, 2%, 10%); <strong>IndicBERT v2</strong> achieved best performance
+                            at <strong>0.766 accuracy</strong>, outperforming larger multilingual models.</li>
+                        <li>Constructed <strong>multilingual NLP datasets</strong> via <strong>machine
+                                translation</strong> pipelines; contributed to open-source Indian language LLM
+                            evaluation benchmarks.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">Multilingual NLP</span><span class="tag">LLM Evaluation</span><span
+                            class="tag">Few-Shot Learning</span><span class="tag">IndicBERT</span>
+                    </div>
+                </div>
+
+                <!-- IIT Delhi -->
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-eye"></i></div>
+                        <div>
+                            <h3>Research Intern</h3>
+                            <a href="https://home.iitd.ac.in" target="_blank" rel="noopener" class="org-link">Indian
+                                Institute of Technology, Delhi</a>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Engineered a <strong>GAN-based deep learning pipeline</strong> for automatic <strong>fundus
+                                image stitching</strong> from overlapping retinal patches; achieved significantly higher
+                            alignment accuracy over traditional <strong>SIFT-based</strong> methods.</li>
+                        <li>Designed a <strong>custom medical imaging dataset</strong> with <strong>K-Means
+                                clustering</strong> and adaptive thresholding; trained the generative model end-to-end
+                            in <strong>PyTorch</strong> on paired patch samples.</li>
+                        <li>Delivered production-ready <strong>retinal image reconstruction</strong> system enhancing
+                            diagnostic coverage for ophthalmology; pipeline generalized across diverse fundus camera
+                            configurations.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">GANs</span><span class="tag">Medical Imaging</span><span
+                            class="tag">PyTorch</span><span class="tag">Computer Vision</span>
+                    </div>
+                </div>
+
+                <!-- DRDL -->
+                <div class="exp-card reveal">
+                    <div class="exp-header">
+                        <div class="exp-icon"><i class="fas fa-shield-halved"></i></div>
+                        <div>
+                            <h3>Software Development Intern</h3>
+                            <a href="https://www.drdo.gov.in/labs-and-establishments/defence-research-development-laboratory-drdl"
+                                target="_blank" rel="noopener" class="org-link">DRDL, Hyderabad (DRDO)</a>
+                        </div>
+                    </div>
+                    <ul class="exp-bullets">
+                        <li>Built a secure <strong>web-based student record management system</strong> with full
+                            <strong>CRUD operations</strong>, image upload handling, and <strong>role-based access
+                                control (RBAC)</strong> enforcing data integrity across user tiers.
+                        </li>
+                        <li>Designed a <strong>normalized MySQL database schema</strong> with optimized indexing;
+                            developed intuitive <strong>RESTful</strong> data entry and query interfaces for
+                            non-technical personnel.</li>
+                        <li>Deployed and stress-tested on <strong>local intranet</strong> via XAMPP; ensured reliable
+                            performance and security compliance within the organization's isolated network
+                            infrastructure.</li>
+                    </ul>
+                    <div class="exp-tags">
+                        <span class="tag">RBAC</span><span class="tag">MySQL</span><span class="tag">RESTful
+                            APIs</span><span class="tag">XAMPP</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Research <span class="gradient-text">Experience</span></h2>
+            <div class="research-grid">
+
+                <div class="research-card reveal">
+                    <div class="research-meta">
+                        <span class="research-institute">IIT Guwahati · Dr. S. Ranbir Singh</span>
+                        <a href="https://github.com/AnubhavBhattachayra/multilingual-Sentiment-Analysis-in-Indian-Language"
+                            target="_blank" rel="noopener" class="research-github"><i class="fab fa-github"></i> View
+                            Code</a>
+                    </div>
+                    <h3>How Multilingual LLMs Are! A Case Study Using Multilingual Sentiment Analysis in Indian
+                        Languages</h3>
+                    <p>Benchmarked multilingual LLMs (XLM-R, mBERT, MuRIL, Navarasa, IndicBERT v2) for sentiment
+                        classification across 6 Indian languages; applied prompt tuning and few-shot learning, with
+                        IndicBERT v2 achieving best-in-class <strong>0.766 accuracy</strong>.</p>
+                    <div class="exp-tags">
+                        <span class="tag">NLP</span><span class="tag">Multilingual LLMs</span><span
+                            class="tag">IndicBERT</span><span class="tag">Sentiment Analysis</span>
+                    </div>
+                </div>
+
+                <div class="research-card reveal">
+                    <div class="research-meta">
+                        <span class="research-institute">IIT Delhi · Dr. K. Paul</span>
+                        <a href="https://github.com/AnubhavBhattachayra/Image-stitching" target="_blank" rel="noopener"
+                            class="research-github"><i class="fab fa-github"></i> View Code</a>
+                    </div>
+                    <h3>Fundus Image Stitching Using GANs: Deep Learning Approach for Retinal Image Reconstruction</h3>
+                    <p>Designed GAN-based deep learning model for retinal fundus image stitching from overlapping
+                        patches; achieved superior alignment accuracy over traditional SIFT-based methods through
+                        adversarial training on custom-curated medical imaging datasets.</p>
+                    <div class="exp-tags">
+                        <span class="tag">GANs</span><span class="tag">Medical Imaging</span><span class="tag">Deep
+                            Learning</span><span class="tag">Ophthalmology</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Featured <span class="gradient-text">Projects</span></h2>
+            <div class="projects-grid">
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-comments"></i></div>
+                        <a href="https://github.com/AnubhavBhattachayra/MultilingualMedBot" target="_blank"
+                            rel="noopener" class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>MultiLingualMedBot</h3>
+                    <p class="project-subtitle">Cross-Language Medical Assistant</p>
+                    <p class="project-desc">Multilingual medical AI chatbot supporting 6 Indian languages with IndicBERT
+                        v2 backbone; integrated medical knowledge RAG pipeline with LangChain for context-aware clinical
+                        query resolution. Deployed on TensorFlow Lite for edge mobile inference.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">PyTorch</span><span class="stack-tag">IndicBERT</span><span
+                            class="stack-tag">LangChain</span><span class="stack-tag">FastAPI</span><span
+                            class="stack-tag">Redis</span><span class="stack-tag">TF Lite</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-circle-check"></i></div>
+                        <a href="https://github.com/AnubhavBhattachayra/ResumeGenius" target="_blank" rel="noopener"
+                            class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>ResumeGenius</h3>
+                    <p class="project-subtitle">AI-Powered Resume Analyzer &amp; Optimizer</p>
+                    <p class="project-desc">Intelligent resume analysis system with fine-tuned BERT models; implemented
+                        agentic LLM workflows to generate personalized improvement recommendations. RAG pipeline using
+                        LangChain and FAISS improved interview callback rates by <strong>35%</strong>.</p>
+                    <div class="project-stack">
+                        <span class="stack-tag">BERT</span><span class="stack-tag">LangChain</span><span
+                            class="stack-tag">FAISS</span><span class="stack-tag">Flask</span><span
+                            class="stack-tag">React</span><span class="stack-tag">Docker</span>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-file-code"></i></div>
+                        <a href="https://github.com/AnubhavBhattachayra/TransformoDocs" target="_blank" rel="noopener"
+                            class="project-link"><i class="fab fa-github"></i></a>
+                    </div>
+                    <h3>TransformoDocs</h3>
+                    <p class="project-subtitle">Machine Readable Document Converter</p>
+                    <p class="project-desc">NLP + OCR pipeline with RAG-based query decomposition to extract structured
+                        information from PDFs and scanned documents; achieved <strong>70% storage reduction</strong>.
+                        Multi-agent LLM workflows with MLFlow improved conversion efficiency by <strong>36%</strong>.
+                    </p>
+                    <div class="project-stack">
+                        <span class="stack-tag">Keras</span><span class="stack-tag">MLFlow</span><span
+                            class="stack-tag">CrewAI</span><span class="stack-tag">LangChain</span><span
+                            class="stack-tag">OCR</span><span class="stack-tag">Streamlit</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Publications</h2>
+            <div class="pub-card reveal">
+                <div class="pub-badge">RIC 2024</div>
+                <h3>How Multilingual LLMs Are! A Case Study of LLMs Using Multilingual Sentiment Analysis in Indian
+                    Language</h3>
+                <p class="pub-meta">Dr. S. Ranbir Singh &nbsp;|&nbsp; RIC 2024 Conference</p>
+                <ul class="pub-points">
+                    <li>Systematic evaluation of multilingual LLMs (XLM-R, mBERT, MuRIL, Navarasa, IndicBERT v2) for
+                        sentiment analysis across <strong>6 Indian languages</strong>.</li>
+                    <li>Applied prompt tuning and few-shot learning with training splits of 1%, 2%, and 10%;
+                        <strong>IndicBERT v2</strong> achieved <strong>0.766 accuracy</strong>, outperforming larger
+                        general-purpose multilingual LLMs.
+                    </li>
+                    <li>Addressed low-resource language data scarcity via machine translation pipelines; advanced open
+                        benchmarking for Indian-language LLM evaluation.</li>
+                </ul>
+                <a href="https://github.com/AnubhavBhattachayra/MultililingualLLM-Sentiment" target="_blank"
+                    rel="noopener" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> &nbsp;View on GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Achievements &amp; <span class="gradient-text">Leadership</span></h2>
+            <div class="ach-grid">
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon"><i class="fas fa-trophy"></i></div>
+                    <h3>National Finalist</h3>
+                    <p class="ach-sub">Smart India Hackathon (SIH) 2024</p>
+                    <p class="ach-org">Ministry of Electronics &amp; Information Technology</p>
+                    <p>Selected among the <strong>top teams nationally</strong> to build and present a production-ready
+                        AI-driven document intelligence solution (TransformoDocs) achieving <strong>70% storage
+                            reduction</strong> via LLM-based RAG pipelines.</p>
+                </div>
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Editorial Head, E-CELL</h3>
+                    <p class="ach-sub">Campus Leadership</p>
+                    <p>Led a <strong>20+ member</strong> editorial team to design and deploy tech-driven content
+                        workflows for event coverage; improved digital reach and engagement across national-level
+                        flagship summits.</p>
+                </div>
+
+                <div class="ach-card reveal">
+                    <div class="ach-icon"><i class="fas fa-handshake"></i></div>
+                    <h3>Sponsorship Head, OWASP Chapter</h3>
+                    <p class="ach-sub">Campus Leadership</p>
+                    <p>Led a <strong>15-member</strong> sponsorship team, securing a <strong>40% increase in
+                            funding</strong> through strategic corporate partnerships; expanded brand visibility for
+                        national-level cybersecurity events.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title reveal">Technical <span class="gradient-text">Skills</span></h2>
+            <div class="skills-grid">
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-icon"><i class="fas fa-code"></i></div>
+                    <h3>Languages</h3>
+                    <div class="skill-chips">
+                        <span class="chip">Python</span><span class="chip">C/C++</span><span
+                            class="chip">JavaScript</span>
+                        <span class="chip">HTML5</span><span class="chip">CSS3</span><span class="chip">SQL</span>
+                        <span class="chip">MySQL</span><span class="chip">PostgreSQL</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-icon"><i class="fas fa-brain"></i></div>
+                    <h3>AI &amp; ML</h3>
+                    <div class="skill-chips">
+                        <span class="chip chip-accent">PyTorch</span><span class="chip chip-accent">TensorFlow</span>
+                        <span class="chip chip-accent">LangChain</span><span class="chip chip-accent">LLM
+                            Fine-Tuning</span>
+                        <span class="chip chip-accent">LoRA / Prompt Tuning</span><span class="chip chip-accent">Agentic
+                            RAG</span>
+                        <span class="chip">Hugging Face</span><span class="chip">Scikit-Learn</span>
+                        <span class="chip">OpenCV</span><span class="chip">FAISS</span><span
+                            class="chip">MLFlow</span><span class="chip">Keras</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-icon"><i class="fas fa-gears"></i></div>
+                    <h3>Data Eng &amp; MLOps</h3>
+                    <div class="skill-chips">
+                        <span class="chip chip-accent">MLFlow</span><span class="chip chip-accent">Docker</span>
+                        <span class="chip">CI/CD</span><span class="chip">ETL Pipelines</span>
+                        <span class="chip">AWS SageMaker</span><span class="chip">Git</span>
+                        <span class="chip">TF Lite</span><span class="chip">FastAPI</span>
+                    </div>
+                </div>
+
+                <div class="skill-group reveal">
+                    <div class="skill-group-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Dev &amp; Tools</h3>
+                    <div class="skill-chips">
+                        <span class="chip">React</span><span class="chip">Node.js</span><span
+                            class="chip">Express.js</span>
+                        <span class="chip">MongoDB</span><span class="chip">Redis</span><span class="chip">Google
+                            Colab</span>
+                        <span class="chip">Kaggle</span><span class="chip">VSCode</span><span
+                            class="chip">Postman</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">Get In <span class="gradient-text">Touch</span></h2>
+            <p class="contact-description reveal">I'm always open to research collaborations, internships, and exciting
+                opportunities. Feel free to reach out!</p>
+            <div class="contact-cards reveal">
+                <a href="mailto:21cs2025@rgipt.ac.in" class="contact-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>21cs2025@rgipt.ac.in</span>
+                </a>
+                <a href="tel:+919311433307" class="contact-card">
+                    <i class="fas fa-phone"></i>
+                    <span>+91 93114 33307</span>
+                </a>
+                <a href="https://www.linkedin.com/in/anubhav-bhattacharya-b463ab23a/" target="_blank" rel="noopener"
+                    class="contact-card">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn Profile</span>
+                </a>
+                <a href="https://github.com/AnubhavBhattachayra" target="_blank" rel="noopener" class="contact-card">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub Profile</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <p>Designed &amp; Built by <span class="gradient-text">Anubhav Bhattacharya</span> &nbsp;·&nbsp; 2025</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

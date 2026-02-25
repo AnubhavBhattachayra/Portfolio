@@ -1,0 +1,371 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{setspace}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{ragged2e}
+
+\usepackage{etoolbox}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.3in}
+\addtolength{\evensidemargin}{-0.3in}
+\addtolength{\textwidth}{0.85in}
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.85in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-2pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-2pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-4pt}}
+  }
+}
+
+\newcommand{\resumeItemWithoutTitle}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+      {\vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small#3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingc}[8]{
+  \noindent
+  \begin{minipage}[c]{0.62\linewidth}
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.3\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+  \end{minipage}\begin{minipage}[c]{0.3\linewidth}
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.3\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#5} & #6 \\
+      \textit{\small#7} & \textit{\small #8} \\
+    \end{tabular*}\vspace{-7pt}\end{minipage}
+}
+
+\newcommand{\resumeSubheadingb}[6]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\scriptsize(#3)} & \textit{\scriptsize #4} \\ \vspace{2pt} % Added small space here
+    \textit{\small#5} & \textit{\small #6} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingPro}[2]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    #1 & {\textit {\small{#2}}} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingProb}[2]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    #1 & {\textit {\small{#2}}} \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingPOR}[2]{
+  \vspace{-2pt}\item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{   #1} & #2
+  \end{tabular*}
+  \vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-5pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+%\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,
+      label={}]}
+    \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+    \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING-----------------
+\begin{center}
+  \textbf{\Huge \scshape Anubhav Bhattacharya} \\ \vspace{1pt}
+  \faIcon{envelope}
+  \href{mailto:21cs2025@rgipt.ac.in}{\underline{21cs2025@rgipt.ac.in}}
+  $|$
+  \faIcon{phone-square-alt} \small
+  \href{tel:+919311433307}{\underline{+919311433307}} $|$
+  \faIcon {linkedin}
+  \href{https://www.linkedin.com/in/anubhav-bhattacharya-b463ab23a/}{\underline{LinkedIn}} $|$
+  %\faIcon{link} \href{https://vayuputra2401.github.io/Personal-Portfolio/}{\underline{pathikreet.com}} $|$
+  \faIcon{github}
+  \href{https://github.com/AnubhavBhattachayra}{\underline{GitHub}} $|$
+  \faIcon{kaggle}
+  \href{https://www.kaggle.com/oatmealnavigator}{\underline{Kaggle }}
+  
+\end{center}
+%-----------SUMMARY-----------------
+\section{Summary}
+\small{
+  M.Tech Computer Science student (SPI: \textbf{8.45}) with hands-on research experience at \textbf{IIT Delhi} and \textbf{IIT Guwahati} in \textbf{multilingual LLM evaluation}, \textbf{GAN-based medical image reconstruction}, and \textbf{agentic NLP pipelines}. Proficient in \textbf{PyTorch, LangChain, RAG}, and \textbf{LLM fine-tuning (LoRA, QLoRA, prompt tuning)}; experienced building \textbf{multi-agent AI systems}, \textbf{MLOps workflows}, and production-ready \textbf{data engineering} pipelines.
+}
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+
+    \resumeSubheadingb
+      {Rajiv Gandhi Institute of Petroleum Technology}{Jais, India}
+      {An Institution of National Importance along the lines of IITs}{}
+      {Master of Technology (IDD) in Computer Science and Engineering}{SPI (7th Semester): 8.45}
+
+    \vspace{4pt} 
+
+    \resumeSubheading
+      {Central Board of Secondary Education}{New Delhi, India}
+      {12th, 2021: 93\% \& 10th, 2019: 96.8\%}{}
+
+\resumeSubHeadingListEnd
+
+
+%------------------Experience-------
+\section{Work Experience}
+\resumeSubHeadingListStart
+
+% REsearch Intern
+\resumeSubheadingPro
+{{{\textbf{Research Intern}}} $|$
+  \href{https://www.iitg.ac.in}{\emph{Indian Institute of Technology, Guwahati}} {}}{}
+  
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Benchmarked \textbf{multilingual LLMs} (XLM-R, mBERT, MuRIL, Navarasa, \textbf{IndicBERT v2}) for \textbf{sentiment analysis} across \textbf{6 Indian languages} (Hindi, Bengali, Tamil, Telugu, Urdu, Assamese); established cross-lingual performance baselines for low-resource NLP}
+\resumeItemWithoutTitle
+{Applied \textbf{prompt tuning} and \textbf{few-shot learning} with varied training data splits (1\%, 2\%, 10\%); \textbf{IndicBERT v2} achieved best performance at \textbf{0.766 accuracy}, outperforming larger multilingual models}
+\resumeItemWithoutTitle
+{Constructed \textbf{multilingual NLP datasets} via \textbf{machine translation} pipelines to address low-resource language scarcity; contributed to open-source Indian language \textbf{LLM evaluation} benchmarks}
+\resumeItemListEnd
+
+% Research Intern at IIT Delhi
+\resumeSubheadingPro
+{{{\textbf{Research Intern}}} $|$
+  \href{https://home.iitd.ac.in}{\emph{Indian Institute of Technology, Delhi}} {}}{}
+
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Engineered a \textbf{GAN-based deep learning pipeline} for automatic \textbf{fundus image stitching} from overlapping retinal patches; achieved significantly higher alignment accuracy over traditional \textbf{SIFT-based} methods}
+\resumeItemWithoutTitle
+{Designed a \textbf{custom medical imaging dataset} with \textbf{K-Means clustering} and adaptive thresholding for preprocessing; trained the generative model end-to-end in \textbf{PyTorch} on paired patch samples}
+\resumeItemWithoutTitle
+{Delivered production-ready \textbf{retinal image reconstruction} system enhancing diagnostic coverage for ophthalmology; pipeline generalized across diverse fundus camera configurations}
+\resumeItemListEnd
+
+% DRDL Software Development Intern
+\resumeSubheadingPro
+{{{\textbf{Software Development Intern}}} $|$
+  \href{https://www.drdo.gov.in/labs-and-establishments/defence-research-development-laboratory-drdl}{\emph{Defence Research and Development Laboratory (DRDL), Hyderabad}} {}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Built a secure \textbf{web-based student record management system} with full \textbf{CRUD operations}, image upload handling, and \textbf{role-based access control (RBAC)} enforcing data integrity across user tiers}
+\resumeItemWithoutTitle
+{Designed a \textbf{normalized MySQL database schema} with optimized indexing; developed intuitive \textbf{RESTful} data entry and query interfaces for non-technical personnel}
+\resumeItemWithoutTitle
+{Deployed and stress-tested on \textbf{local intranet} via \textbf{XAMPP}; ensured reliable performance and security compliance within the organization's isolated network infrastructure}
+\resumeItemListEnd
+
+
+
+
+
+\resumeSubHeadingListEnd
+
+
+
+
+
+
+%-----------Research Projects-----------------
+
+\section{Research Experience}
+\resumeSubHeadingListStart
+% Multilingual LLM Sentiment Analysis
+\resumeSubheadingPro
+{{{\textbf{How multilingual LLMs are! A case study of LLMs using multilingual Sentiment Analysis in Indian}}} \\
+{{{\textbf{ Language Evaluation of Multilingual LLMs for Indian Languages}}}} $|$ \emph{IIT Guwahati} $|$ \emph{Dr. S. Ranbir Singh} $|$
+\href{https://github.com/AnubhavBhattachayra/multilingual-Sentiment-Analysis-in-Indian-Language}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Benchmarked \textbf{multilingual LLMs} (XLM-R, mBERT, MuRIL, Navarasa, \textbf{IndicBERT v2}) for \textbf{sentiment classification} across \textbf{6 Indian languages}; applied \textbf{prompt tuning} and \textbf{few-shot learning} strategies, with \textbf{IndicBERT v2} achieving best-in-class \textbf{0.766 accuracy}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+% Fundus Image Stitching Using GANs
+\resumeSubheadingPro
+{{{\textbf{Fundus Image Stitching Using GANs: Deep Learning Approach for Retinal Image Reconstruction}}} \\
+{{{\textbf{Advanced Medical Image Processing for Ophthalmology}}}} $|$ \emph{IIT Delhi} $|$ \emph{Dr. K. Paul} $|$
+\href{https://github.com/AnubhavBhattachayra/Image-stitching}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Designed \textbf{GAN-based deep learning model} for \textbf{retinal fundus image stitching} from overlapping patches; achieved superior \textbf{alignment accuracy} over traditional \textbf{SIFT-based} methods through adversarial training on custom-curated medical imaging datasets}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+
+
+
+
+%-----------Published Work-----------------
+\section{Publications}
+\resumeSubHeadingListStart
+\resumeSubheadingPro
+{\href{https://github.com/AnubhavBhattachayra/MultililingualLLM-Sentiment}{{\textbf{How multilingual LLMs are! A case study of LLMs using multilingual Sentiment Analysis in}}} \\
+{\href{https://github.com/AnubhavBhattachayra/multilingual-Sentiment-Analysis-in-Indian-Language}{{\textbf{Indian Language}}}} $|$ \emph{RIC 2024} $|$ \emph{Dr. S. Ranbir Singh} $|$
+\href{https://github.com/AnubhavBhattachayra/MultililingualLLM-Sentiment}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{Conducted systematic evaluation of \textbf{multilingual LLMs} (XLM-R, mBERT, MuRIL, Navarasa, \textbf{IndicBERT v2}) for \textbf{sentiment analysis} across \textbf{6 Indian languages}; established cross-lingual performance baselines for \textbf{low-resource NLP}}
+\resumeItemWithoutTitle
+{Applied \textbf{prompt tuning} and \textbf{few-shot learning} with training splits of 1\%, 2\%, and 10\%; \textbf{IndicBERT v2} achieved \textbf{0.766 accuracy}, outperforming larger general-purpose \textbf{multilingual LLMs} on Indian language tasks}
+\resumeItemWithoutTitle
+{Addressed \textbf{low-resource language data scarcity} via \textbf{machine translation} pipelines to construct \textbf{multilingual training datasets}; advanced open benchmarking for Indian-language \textbf{LLM evaluation}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%-----------Completed proj---------------
+\section{Projects}
+
+
+% MultiLingualMedBot - Cross-Language Medical Assistant
+\resumeSubHeadingListStart
+\resumeSubheadingPro
+{\href{https://github.com/AnubhavBhattachayra/MultilingualMedBot}{{\textbf{MultiLingualMedBot - Cross-Language Medical Assistant}}} $|$ 
+  \href{https://github.com/AnubhavBhattachayra/MultilingualMedBot}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{\textbf{Tech Stack:} PyTorch, IndicBERT, MuRIL, Hugging Face Transformers, LangChain, FastAPI, Redis, React Native, TensorFlow Lite}
+\resumeItemWithoutTitle
+{Engineered a \textbf{multilingual medical AI chatbot} supporting \textbf{6 Indian languages} with \textbf{IndicBERT v2} backbone; integrated \textbf{medical knowledge RAG} pipeline with \textbf{LangChain} for context-aware clinical query resolution}
+\resumeItemWithoutTitle
+{Applied \textbf{few-shot learning} and \textbf{prompt optimization} for domain-specific medical NLP; deployed on \textbf{TensorFlow Lite} for \textbf{edge mobile inference} with \textbf{Redis} caching for low-latency response delivery}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% ResumeGenius - AI-Powered Resume Analyzer and Optimizer
+\resumeSubHeadingListStart
+\resumeSubheadingPro
+{\href{https://github.com/AnubhavBhattachayra/ResumeGenius}{{\textbf{ResumeGenius - AI-Powered Resume Analyzer and Optimizer}}} $|$    
+  \href{https://github.com/AnubhavBhattachayra/ResumeGenius}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{\textbf{Tech Stack:} PyTorch, Hugging Face Transformers, LangChain, FAISS, Flask, React, MongoDB, Docker}
+\resumeItemWithoutTitle
+{Built intelligent \textbf{resume analysis system} with \textbf{fine-tuned BERT} models for structured component evaluation; implemented \textbf{agentic LLM workflows} to generate personalized, industry-aligned improvement recommendations}
+\resumeItemWithoutTitle
+{Engineered \textbf{RAG pipeline} using \textbf{LangChain} and \textbf{FAISS} vector store to retrieve live job market signals; applied \textbf{LLM optimization} to tailor resume content per industry vertical, improving interview callback rates by \textbf{35\%}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+% TransformoDocs - Machine Readable Document Converter
+\resumeSubHeadingListStart
+\resumeSubheadingPro
+{\href{https://github.com/AnubhavBhattachayra/TransformoDocs}{{\textbf{TransformoDocs - Machine Readable Document Converter}}} $|$
+  \href{https://github.com/AnubhavBhattachayra/TransformoDocs}{\faIcon{github}}}{}
+\resumeItemListStart
+\resumeItemWithoutTitle
+{\textbf{Tech Stack:} Keras, MLFlow, LangChain, CrewAI, Chain-of-Thought, PyTesseract, Pandas, NumPy, Streamlit}
+\resumeItemWithoutTitle
+{Integrated \textbf{NLP and OCR pipelines} with \textbf{RAG-based} query decomposition to extract and structure information from PDFs and scanned documents into \textbf{JSON/XML}; achieved \textbf{70\% storage reduction} through structured \textbf{data engineering} outputs}
+\resumeItemWithoutTitle
+{Implemented \textbf{MLOps} with \textbf{CI/CD} automation via \textbf{MLFlow}; deployed \textbf{multi-agent LLM workflows} with \textbf{LLM observability} improving document-to-machine conversion efficiency by \textbf{36\%}}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+\resumeSubHeadingListStart
+    \resumeSubheadingPro
+    {{\textbf{National Finalist, Smart India Hackathon (SIH) 2024}} $|$ \emph{Ministry of Electronics \& Information Technology}}{}\
+    \vspace{2pt}
+    \resumeItemListStart
+        \resumeItemWithoutTitle
+        {Selected among the \textbf{top teams nationally} to build and present a production-ready \textbf{AI-driven document intelligence solution} (\textbf{TransformoDocs}) achieving \textbf{70\% storage reduction} via \textbf{LLM-based RAG} pipelines}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+%-----------Leadership Roles-----------------
+\section{Leadership Roles}
+\vspace{3pt}
+\resumeSubHeadingListStart
+
+\resumeSubItem{\textbf{Editorial Head, E-CELL}}{Led a \textbf{20+ member} editorial team to design and deploy \textbf{tech-driven} content workflows for event coverage; improved digital reach and engagement across the organization's national-level flagship summits}
+\vspace{4pt}
+\resumeSubItem{\textbf{Sponsorship Head, OWASP Chapter}}{Led a \textbf{15-member} sponsorship team, securing a \textbf{40\% increase in funding} through strategic corporate partnerships; significantly expanded brand visibility and chapter presence for national-level cybersecurity events}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%--------PROGRAMMING SKILLS------------
+\section{Skills}
+\vspace{3pt}
+\resumeSubHeadingListStart
+\resumeSubItem{Languages}{Python, C/C++, JavaScript, HTML5, CSS3, \textbf{SQL (MySQL, PostgreSQL)}}
+\vspace{4pt}
+\resumeSubItem{AI \& ML}{PyTorch, TensorFlow, Keras, \textbf{LangChain, LLM Fine-Tuning (LoRA, Prompt Tuning)}, Hugging Face Transformers, \textbf{Agentic RAG}, Scikit-Learn, OpenCV, FAISS, \textbf{MLFlow}}
+\vspace{4pt}
+\resumeSubItem{Data Eng \& MLOps}{\textbf{MLFlow, Docker}, CI/CD Automation, \textbf{ETL Pipelines}, AWS SageMaker, Git, TensorFlow Lite, FastAPI}
+\vspace{4pt}
+\resumeSubItem{Dev \& Tools}{React, Node.js, Express.js, MongoDB, Redis, Google Colab, Kaggle, VSCode, Postman}
+\resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
